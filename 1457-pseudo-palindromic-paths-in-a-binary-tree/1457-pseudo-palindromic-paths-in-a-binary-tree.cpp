@@ -10,6 +10,10 @@
  * };
  */
 class Solution {
+    private:
+    map<int,int> mp;
+    int res=0;
+    
     void f(TreeNode* root){
         if(root==NULL)
             return;
@@ -32,7 +36,4 @@ public:
         return res;
     }
 
-private:
-    map<int,int> mp;
-    int res=0;
 };
