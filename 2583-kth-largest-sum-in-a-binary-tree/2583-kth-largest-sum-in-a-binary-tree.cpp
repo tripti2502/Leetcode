@@ -22,22 +22,22 @@ public:
                 TreeNode* front=q.front();
                 q.pop();
                 
-                //sum=sum+front->val;
+                sum=sum+front->val;
                 if(front->left){
                     q.push(front->left);
                 }
                 if(front->right){
                     q.push(front->right);
                 }
-                sum=sum+front->val;
+                
             }
             v.push_back(sum);
         }
         int n=v.size();
         if(n<k) return -1;
         
-        long long ans=0;
-      sort(v.begin(),v.end());
+        //long long ans=0;
+       sort(v.begin(),v.end());
        
         return v[n-k];
     }
