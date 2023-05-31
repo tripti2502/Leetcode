@@ -8,7 +8,7 @@ public:
                 ans++;
                 mp.clear();
             }
-            mp[s[i]]=i;
+            mp[s[i]]=1;
         }
         return ans;
     }
