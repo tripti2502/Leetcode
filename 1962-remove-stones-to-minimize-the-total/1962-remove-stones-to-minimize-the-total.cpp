@@ -9,7 +9,7 @@ public:
         while(!pq.empty() && k){
             int top=pq.top();
             pq.pop();
-             pq.push((top+1)/2);
+            pq.push(top-(top/2));  //pq.push((top+1)/2);
             k=k-1;
         }
         int sum=0; 
