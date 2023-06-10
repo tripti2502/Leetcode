@@ -13,14 +13,13 @@ public:
       int ans=0;
       int mod=1e9+7;
       for(int i=0;i<nums.size();i++){
+        
+          int diff=nums[i]-reverse(nums[i]);
           
-          int rev=reverse(nums[i]);
-          
-          int diff=nums[i]-rev;
-          
-          if(mp.find(diff)!=mp.end())
-            ans=((ans % mod) +mp[diff])%mod;
-         mp[diff]++;
+          if(mp.find(diff)!=mp.end()) //(mp.count(diff)==true)
+              
+             ans=(ans+mp[diff])%mod;
+            mp[diff]++;
       }
       return ans;
     }
