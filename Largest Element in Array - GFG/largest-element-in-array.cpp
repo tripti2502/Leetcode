@@ -12,8 +12,12 @@ class Solution
 public:
     int largest(vector<int> &arr, int n)
     {
-        sort(arr.begin(), arr.end());
-        return arr[arr.size()-1];
+        int mx=INT_MIN;
+        for(int i=0;i<n;i++)
+        {
+            mx=max(mx,arr[i]);
+        }
+        return mx;
     }
 };
 
