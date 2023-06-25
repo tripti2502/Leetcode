@@ -7,7 +7,7 @@ public:
             return 0;
         if(dp[index]!=-1) return dp[index];
         int pick=nums[index]+f(index-2, nums, dp);
-        int not_pick=0+ f(index-1, nums, dp);
+        int not_pick=0+f(index-1, nums, dp);
         return dp[index]=max(pick, not_pick); 
     }
     int rob(vector<int>&nums){
