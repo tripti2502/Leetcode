@@ -16,7 +16,7 @@ public:
 	    for(int i=1;i<n; i++){
 	        int take=arr[i];
 	        if(i>1) take+=dp[i-2];
-	        int ntake=dp[i-1];
+	        int ntake=0+dp[i-1];
 	        dp[i]=max(take, ntake);
 	    }
 	    return dp[n-1];
