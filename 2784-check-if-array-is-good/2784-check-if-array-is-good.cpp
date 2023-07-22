@@ -12,3 +12,11 @@ public:
         
     }
 };
+// bool isGood(vector<int>& nums) {
+//         sort(nums.begin(),nums.end());
+//         int n = nums.back();
+//         map<int,int> mp;
+//         for(auto it:nums) mp[it]++;
+//         for(int i=1;i<=n-1;i++) if((mp[i]!=1)) return false;
+//         if(mp[n]!=2) return false;
+//         return true;
