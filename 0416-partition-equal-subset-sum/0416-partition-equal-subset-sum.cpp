@@ -8,7 +8,7 @@ public:
         totSum+= nums[i];
     }
     
-    if (totSum%2==1) return false;
+    if (totSum%2) return false;
     
     else{
         int k = totSum/2;
