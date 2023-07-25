@@ -9,6 +9,6 @@ public:
             else
                 e=m;
         }
-        return s;
+        return e;
     }
 };
