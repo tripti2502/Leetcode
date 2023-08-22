@@ -1,6 +1,6 @@
 /**
  * Definition for a binary tree node.
- * struct TreeNode {
+ * struct TreeNode {        
  *     int val;
  *     TreeNode *left;
  *     TreeNode *right;
@@ -15,7 +15,7 @@ class Solution {
           int l=func(root->left,maxD);
           int r=func(root->right,maxD);
           maxD=max(maxD,l+r);
-          return max(l,r)+1;
+          return max(l,r)+1;;
 
       }
 public:
@@ -25,3 +25,4 @@ public:
        return maxD;
     }
 };
+
