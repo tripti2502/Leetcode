@@ -10,7 +10,7 @@ public:
 
        
         vector<int> res(n);
-        res.push_back(0);  // for num = 0
+        res.push_back(0);  
         if (n == 0) return res;
         
         for (int i = 1; i <= n; i++) {
