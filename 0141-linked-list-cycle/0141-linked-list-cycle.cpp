@@ -27,7 +27,7 @@ public:
 //         return a==b;
         
         unordered_set<ListNode*> s;
-    while (h != NULL) {
+    while (h) {
         // If this node is already present in hashmap it means there is a cycle
     
         if (s.find(h) != s.end())
