@@ -27,7 +27,7 @@ public:
             if(suffix[i]==x)
                ans = min(ans, n-i);
                 
-                if(mp[x - suffix[i]] > 0 && i + 1 > mp[x - suffix[i]]) 
+                if(mp[x - suffix[i]] > 0 && mp[prefix[i]] > mp[x - suffix[i]]) 
 				ans = min(ans, n - i + mp[x - suffix[i]]);
         
         }
