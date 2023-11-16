@@ -7,9 +7,10 @@ public:
         for(int i = 0; i < k; i++) {
             string s = "";
             for(int j = 0; j < n; j++) {
-                s = char('0' + ((i >> j) & 1 )) + s;
+                s += char('0' + ((i >> j) & 1 ));
             }
-            if(Set.find(s) == Set.end()) return s;
+            if(Set.find(s) == Set.end())
+                return s;
         }
         return "";
     }
