@@ -15,10 +15,9 @@ public:
                     count++;
             }
             
-            ans=ans+prev*count; // main logic part
-            
+            ans=ans+prev*count; 
             if(count>0)
-                prev=count; // when count is non-zero ,we store this in prev 
+                prev=count; // when count is non-zero we store this in prev 
                 
             
         }
